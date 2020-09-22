@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-assets>
+        <a-asset-item
+          id="black"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fblack.glb?v=1600718393601"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="black--blue-green"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fblack--blue-green.glb?v=1600718401534"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="black--rect"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fblack--rect.glb?v=1600718404798"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="black--trap"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fblack--trap.glb?v=1600718409281"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="blue-green--sphere"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fblue-green--sphere.glb?v=1600718413203"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="blue--trap"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fblue--trap.glb?v=1600718417083"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="green--hemisphere"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fgreen--hemisphere.glb?v=1600718420666"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="pink-blue--orange-green"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fpink-blue--orange-green.glb?v=1600718424141"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="pink--trap"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fpink--trap.glb?v=1600718427474"
+        >
+        </a-asset-item>
+        <a-asset-item
+          id="frame"
+          src="https://cdn.glitch.com/dc1f0564-b197-456d-a307-2236110bc4bc%2Fout.glb?v=1600731825034"
+        >
+        </a-asset-item>
+      </a-assets>
+
+      
+      <a-entity
+        gltf-model="#frame"
+        position="0.46 0.05 1.6" rotation="0 0 90"
+        scale="0.009 0.0135 0.01"
+        >
+      </a-entity>
+      <a-entity
+        gltf-model="#frame"
+        position="0.53 0.046 1.8" rotation="0 0 90"
+        scale="0.0095 0.015 0.01"
+        >
+      </a-entity>
+      <a-entity
+        gltf-model="#frame"
+        position="0.53 0.046 2" rotation="0 0 90"
+        scale="0.0095 0.015 0.01"
+        >
+      </a-entity>
+      <a-entity
+        gltf-model="#black"
+        position="-0.86 0.05 -1"
+        rotation="5 0 0"
+        scale="1 1 2"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#black--blue-green"
+        rotation="0 90 0"
+        position="-1.45 -0.625 -0.3"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#black--blue-green"
+        rotation="0 93 0"
+        position="-1.39 0.65 0"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#black--rect"
+        position="1.61 -1.5343 -4"
+        scale="2 2 2"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#black--trap"
+        position="1.21 1.1 -2.4"
+        rotation="0 0 180"
+        scale="1.4 1.4 4"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#blue-green--sphere"
+        position="-0.3 0.185 0" rotation="8 0 0"
+        scale="0.4 0.4 0.4"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#green--hemisphere"
+        position="-0.7 -1 -0.8"
+        scale="0.8 0.8 0.7"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#pink-blue--orange-green"
+        rotation="0 90 0"
+        position="-0.45 0 -2"
+        scale="1.7 1.6 1.3"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#pink-blue--orange-green"
+        rotation="0 -90 0"
+        position="1.155 -0.965 -1.76"
+        scale="1.5 1.5 1.5"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#pink--trap"
+        position="0.74 0.135 -1"
+        scale="1.3 1 1.5"
+      >
+      </a-entity>
+      <a-entity
+        gltf-model="#black--blue-green"
+        rotation="0 -90 0"
+        position="0.76 -0.1 -2.4"
+        scale="0.5 1.8 1.7"
+      >
+      </a-entity>
+      <a-sphere
+        position="0.4 -0.25 -0.65"
+        opacity="0.8"
+        radius="0.3"
+      ></a-sphere>
+      <a-plane color="#080090" position="0 0.3 -5" width="60" height="50">
+      </a-plane>
+      <a-entity
+        camera
+        position="0 0 3"
+        wasd-controls
+        rotation
+        look-controls
+        aframe-injected
+      >
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
